@@ -165,25 +165,31 @@ namespace JeraDesktop
             rowSelected.Add(cellSelecion);
             decimal sum = 0;
             decimal subtotal = 0;
+            decimal impiva = 0;
             foreach (DataGridViewRow row in rowSelected)
             {
                 decimal iva = Convert.ToDecimal(row.Cells["IVA"].Value) / 100 + 1;
+                decimal impuestomenor = Convert.ToDecimal(row.Cells["IVA"].Value) / 100;
                 decimal precio = Convert.ToDecimal(row.Cells["Precio"].Value);
                 decimal suma = precio * iva;
+                decimal impuestos = precio * impuestomenor;
                 dgvVenta.Rows.Add(new object[] {
                                             row.Cells["Id"].Value,
                                             row.Cells["Producto"].Value,
                                             1,
                                             row.Cells["Precio"].Value,
                                             row.Cells["IVA"].Value,
-                                            suma
+                                            suma,
+                                            impuestos
                                             });
             }
             for (int i = 0; i < dgvVenta.RowCount; i++)
             {
                 subtotal = subtotal + Convert.ToDecimal(dgvVenta.Rows[i].Cells[3].Value);
                 sum = sum + Convert.ToDecimal(dgvVenta.Rows[i].Cells[5].Value);
-                txtsubtotal.Text = "$ " + subtotal.ToString("0.##"); 
+                impiva = impiva + Convert.ToDecimal(dgvVenta.Rows[i].Cells[6].Value);
+                txtsubtotal.Text = "$ " + subtotal.ToString("0.##");
+                txtImpuesto.Text = "$ " + impiva.ToString("0.##"); 
                 txtTotal.Text = "$ " + sum.ToString("0.##");
             }
         }
@@ -243,6 +249,60 @@ namespace JeraDesktop
         {
             frmRetiro retiro = new frmRetiro();
             retiro.ShowDialog();
+        }
+
+        private void pbOk_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("SP_Inserta_venta", xSQL.conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            SqlParameter folio = new SqlParameter("@nId", SqlDbType.Int);
+            folio.Direction = ParameterDirection.InputOutput;
+            folio.Value = 0;
+            cmd.Parameters.Add(folio);
+
+            SqlParameter caja = new SqlParameter("@nCaja", SqlDbType.Int);
+            caja.Value = Generales.cajaActual;
+            cmd.Parameters.Add(caja);
+
+            SqlParameter cajero = new SqlParameter("@nCajero", SqlDbType.Int);
+            cajero.Value = Generales.cajeroActual;
+            cmd.Parameters.Add(cajero);
+
+            SqlParameter subtotal = new SqlParameter("@nSubtotal", SqlDbType.VarChar,50);
+            subtotal.Value = txtsubtotal.Text;
+            cmd.Parameters.Add(subtotal);
+
+            SqlParameter impuesto = new SqlParameter("@nImpuesto", SqlDbType.VarChar,50);
+            impuesto.Value = txtImpuesto.Text;
+            cmd.Parameters.Add(impuesto);
+
+            SqlParameter total = new SqlParameter("@nTotal", SqlDbType.VarChar,50);
+            total.Value = txtTotal.Text;
+            cmd.Parameters.Add(total);
+
+            SqlParameter fecha = new SqlParameter("@sFecha", SqlDbType.DateTime);
+            fecha.Value = DateTime.Now;
+            cmd.Parameters.Add(fecha);
+
+            try
+            {
+                xSQL.conn.Open();
+                cmd.ExecuteNonQuery();
+                Mensajes.Aviso("Venta registrada con éxito");
+            }
+            catch (Exception ex)
+            {
+                Mensajes.Error("A ocurrido un error en el sistema, " + ex.Message);
+            }
+            finally
+            {
+                xSQL.conn.Close();
+                dgvVenta.Rows.Clear();
+                txtsubtotal.Text = "";
+                txtImpuesto.Text = "";
+                txtTotal.Text = "";
+            }
         }
 
     }

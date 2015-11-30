@@ -70,6 +70,9 @@ namespace JeraDesktop
                     }
                     else
                     {
+                        contra.Close();
+                        SqlCommand cmd2 = new SqlCommand("update turnos set estado_actual = 'Activo' where caja = " + Generales.cajaActual + " and cajero = " + Generales.cajeroActual + "", xSQL.conn);
+                        cmd2.ExecuteNonQuery();
                         Form1 menu = new Form1();
                         menu.Show();
                         this.Close();
@@ -81,7 +84,7 @@ namespace JeraDesktop
                     Mensajes.Error("No se encontro usuario");
                 }
 
-                contra.Close();
+                
 
 
             }
@@ -128,9 +131,12 @@ namespace JeraDesktop
                         }
                         else
                         {
-                            Form1 menu = new Form1();
-                            menu.Show();
-                            this.Close();
+                            contra.Close();
+                            SqlCommand cmd2 = new SqlCommand("update turnos set estado_actual = 'Activo' where caja = " + Generales.cajaActual + " and cajero = " + Generales.cajeroActual + "", xSQL.conn);
+                        cmd2.ExecuteNonQuery();
+                        Form1 menu = new Form1();
+                        menu.Show();
+                        this.Close();
                         }
 
                     }
@@ -139,7 +145,6 @@ namespace JeraDesktop
                         Mensajes.Error("No se encontro usuario");
                     }
 
-                    contra.Close();
 
 
                 }

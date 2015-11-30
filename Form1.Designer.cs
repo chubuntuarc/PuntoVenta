@@ -48,12 +48,6 @@
             this.dgvVenta = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Clave = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IVA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pbOk = new System.Windows.Forms.PictureBox();
             this.pbCerrarTurno = new System.Windows.Forms.PictureBox();
             this.pbRetiro = new System.Windows.Forms.PictureBox();
@@ -63,6 +57,13 @@
             this.pbMenu = new System.Windows.Forms.PictureBox();
             this.pbSuperior = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Clave = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IVA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Impuestos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pMenu.SuspendLayout();
             this.pBusqueda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBusqueda)).BeginInit();
@@ -249,7 +250,8 @@
             this.Cantidad,
             this.Clave,
             this.IVA,
-            this.Importe});
+            this.Importe,
+            this.Impuestos});
             this.dgvVenta.Location = new System.Drawing.Point(54, 76);
             this.dgvVenta.Name = "dgvVenta";
             this.dgvVenta.RowHeadersVisible = false;
@@ -282,37 +284,6 @@
             this.label6.TabIndex = 18;
             this.label6.Text = "►";
             // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            // 
-            // Producto
-            // 
-            this.Producto.HeaderText = "Producto";
-            this.Producto.Name = "Producto";
-            this.Producto.Width = 130;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            // 
-            // Clave
-            // 
-            this.Clave.HeaderText = "Precio";
-            this.Clave.Name = "Clave";
-            // 
-            // IVA
-            // 
-            this.IVA.HeaderText = "IVA";
-            this.IVA.Name = "IVA";
-            // 
-            // Importe
-            // 
-            this.Importe.HeaderText = "Importe";
-            this.Importe.Name = "Importe";
-            // 
             // pbOk
             // 
             this.pbOk.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -323,6 +294,7 @@
             this.pbOk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbOk.TabIndex = 21;
             this.pbOk.TabStop = false;
+            this.pbOk.Click += new System.EventHandler(this.pbOk_Click);
             // 
             // pbCerrarTurno
             // 
@@ -416,6 +388,43 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            // 
+            // Producto
+            // 
+            this.Producto.HeaderText = "Producto";
+            this.Producto.Name = "Producto";
+            this.Producto.Width = 130;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            // 
+            // Clave
+            // 
+            this.Clave.HeaderText = "Precio";
+            this.Clave.Name = "Clave";
+            // 
+            // IVA
+            // 
+            this.IVA.HeaderText = "IVA";
+            this.IVA.Name = "IVA";
+            // 
+            // Importe
+            // 
+            this.Importe.HeaderText = "Importe";
+            this.Importe.Name = "Importe";
+            // 
+            // Impuestos
+            // 
+            this.Impuestos.HeaderText = "Impuestos";
+            this.Impuestos.Name = "Impuestos";
+            this.Impuestos.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -498,13 +507,14 @@
         public System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.PictureBox pbRetiro;
         private System.Windows.Forms.PictureBox pbCerrarTurno;
+        private System.Windows.Forms.PictureBox pbOk;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Producto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Clave;
         private System.Windows.Forms.DataGridViewTextBoxColumn IVA;
         private System.Windows.Forms.DataGridViewTextBoxColumn Importe;
-        private System.Windows.Forms.PictureBox pbOk;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Impuestos;
     }
 }
 
