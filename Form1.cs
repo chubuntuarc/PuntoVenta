@@ -33,7 +33,9 @@ namespace JeraDesktop
 
         private void pbSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            frmCerrarTurno cerrar = new frmCerrarTurno();
+            cerrar.Show();
+            this.Hide();
         }
 
         private void pbMenu_Click(object sender, EventArgs e)
@@ -249,6 +251,7 @@ namespace JeraDesktop
         {
             frmRetiro retiro = new frmRetiro();
             retiro.ShowDialog();
+            this.Hide();
         }
 
         private void pbOk_Click(object sender, EventArgs e)

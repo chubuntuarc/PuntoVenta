@@ -33,6 +33,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pMenu = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
@@ -46,17 +47,6 @@
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.dgvBusqueda = new System.Windows.Forms.DataGridView();
             this.dgvVenta = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pbOk = new System.Windows.Forms.PictureBox();
-            this.pbCerrarTurno = new System.Windows.Forms.PictureBox();
-            this.pbRetiro = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pbSalir = new System.Windows.Forms.PictureBox();
-            this.pbMenu = new System.Windows.Forms.PictureBox();
-            this.pbSuperior = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,7 +54,18 @@
             this.IVA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Impuestos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pbOk = new System.Windows.Forms.PictureBox();
+            this.pbCerrarTurno = new System.Windows.Forms.PictureBox();
+            this.pbRetiro = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pbSalir = new System.Windows.Forms.PictureBox();
+            this.pbMenu = new System.Windows.Forms.PictureBox();
+            this.pbSuperior = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pBusqueda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBusqueda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).BeginInit();
@@ -72,7 +73,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrarTurno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRetiro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSuperior)).BeginInit();
@@ -118,6 +118,18 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Configuración";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::JeraDesktop.Properties.Resources.ic_settings_white_24dp_2x;
+            this.pictureBox2.Location = new System.Drawing.Point(15, 498);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // lblUsuario
             // 
@@ -260,6 +272,43 @@
             this.dgvVenta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dgvVenta.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView1_KeyDown);
             // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            // 
+            // Producto
+            // 
+            this.Producto.HeaderText = "Producto";
+            this.Producto.Name = "Producto";
+            this.Producto.Width = 130;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            // 
+            // Clave
+            // 
+            this.Clave.HeaderText = "Precio";
+            this.Clave.Name = "Clave";
+            // 
+            // IVA
+            // 
+            this.IVA.HeaderText = "IVA";
+            this.IVA.Name = "IVA";
+            // 
+            // Importe
+            // 
+            this.Importe.HeaderText = "Importe";
+            this.Importe.Name = "Importe";
+            // 
+            // Impuestos
+            // 
+            this.Impuestos.HeaderText = "Impuestos";
+            this.Impuestos.Name = "Impuestos";
+            this.Impuestos.Visible = false;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -332,18 +381,6 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::JeraDesktop.Properties.Resources.ic_settings_white_24dp_2x;
-            this.pictureBox2.Location = new System.Drawing.Point(15, 498);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // pbSalir
             // 
             this.pbSalir.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -388,43 +425,6 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            // 
-            // Producto
-            // 
-            this.Producto.HeaderText = "Producto";
-            this.Producto.Name = "Producto";
-            this.Producto.Width = 130;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            // 
-            // Clave
-            // 
-            this.Clave.HeaderText = "Precio";
-            this.Clave.Name = "Clave";
-            // 
-            // IVA
-            // 
-            this.IVA.HeaderText = "IVA";
-            this.IVA.Name = "IVA";
-            // 
-            // Importe
-            // 
-            this.Importe.HeaderText = "Importe";
-            this.Importe.Name = "Importe";
-            // 
-            // Impuestos
-            // 
-            this.Impuestos.HeaderText = "Impuestos";
-            this.Impuestos.Name = "Impuestos";
-            this.Impuestos.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -461,6 +461,7 @@
             this.Click += new System.EventHandler(this.Form1_Click);
             this.pMenu.ResumeLayout(false);
             this.pMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pBusqueda.ResumeLayout(false);
             this.pBusqueda.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBusqueda)).EndInit();
@@ -469,7 +470,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrarTurno)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRetiro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSuperior)).EndInit();
