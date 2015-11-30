@@ -1,0 +1,47 @@
+c:\users\chubu_000\documents\visual studio 2015\Projects\JeraDesktop\JeraDesktop\bin\Debug\JeraDesktop.exe.config
+c:\users\chubu_000\documents\visual studio 2015\Projects\JeraDesktop\JeraDesktop\bin\Debug\JeraDesktop.exe
+c:\users\chubu_000\documents\visual studio 2015\Projects\JeraDesktop\JeraDesktop\bin\Debug\JeraDesktop.pdb
+c:\users\chubu_000\documents\visual studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.csprojResolveAssemblyReference.cache
+c:\users\chubu_000\documents\visual studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.Form1.resources
+c:\users\chubu_000\documents\visual studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.Properties.Resources.resources
+c:\users\chubu_000\documents\visual studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.csproj.GenerateResource.Cache
+c:\users\chubu_000\documents\visual studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.exe
+c:\users\chubu_000\documents\visual studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.pdb
+c:\users\chubu_000\documents\visual studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmConfiguracion.resources
+c:\users\chubu_000\documents\visual studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmServidor.resources
+c:\users\chubu_000\documents\visual studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmUsuarios.resources
+c:\users\chubu_000\documents\visual studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmEditaUsuario.resources
+c:\users\chubu_000\documents\visual studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmClientes.resources
+c:\users\chubu_000\documents\visual studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmEditarClientes.resources
+c:\users\chubu_000\documents\visual studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmProductos.resources
+C:\Users\chubu_000\Documents\Visual Studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmEditaProductos.resources
+C:\Users\chubu_000\Documents\Visual Studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmDepartamentos.resources
+C:\Users\chubu_000\Documents\Visual Studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmEditarDepartamentos.resources
+C:\Users\chubu_000\Documents\Visual Studio 2015\Projects\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmLogin.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\bin\Debug\JeraDesktop.exe.config
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.exe
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.pdb
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\bin\Debug\JeraDesktop.exe
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\bin\Debug\JeraDesktop.pdb
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.csprojResolveAssemblyReference.cache
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.Form1.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmClientes.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmConfiguracion.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmDepartamentos.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmEditaProductos.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmEditarClientes.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmEditarDepartamentos.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmEditaUsuario.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmLogin.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmProductos.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmServidor.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmUsuarios.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.Properties.Resources.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.csproj.GenerateResource.Cache
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmRegistrar.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmRetiro.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmTurno.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmEditaRegistro.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmModulos.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmCerrarTurno.resources
+C:\Users\Windows Shity\Documents\JeraDesktop\JeraDesktop\obj\Debug\JeraDesktop.frmBloqueado.resources
